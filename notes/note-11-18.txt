@@ -1,0 +1,17 @@
+Plan 
+
+claude tai voice ooroo hariltsana
+
+Task - sudalgaa
+1. Yugaar ehluuleh ve - discord chat voice
+2. Tools iin jagsaalt
+
+Improvements
+1. Mongol hel oilgoh chanar
+2. Mongol helnii nairuulga
+
+1.   Voice message (дуут зурвас файл)
+2. Elevenlabs Scribe
+
+key:
+(түлхүүрийг нийтлээгүй)

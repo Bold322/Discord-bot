@@ -1,0 +1,21 @@
+(version 1)
+; Claude-ийн бичсэн Python скриптийг ажиллуулах хязгаарлалт.
+; Сүүлд бичигдсэн дүрэм давамгайлна.
+(allow default)
+
+; Сүлжээ бүрэн хаалттай.
+(deny network*)
+
+; Зөвхөн ажлын түр хавтаст бичнэ.
+(deny file-write*)
+(allow file-write* (subpath (param "WORK")))
+(allow file-write* (literal "/dev/null") (literal "/dev/dtracehelper"))
+
+; Хэрэглэгчийн хавтсууд, бусад диск, бусад програмын түр файлыг уншихгүй.
+(deny file-read* (subpath "/Users") (subpath "/Volumes") (subpath "/private/var/folders"))
+(allow file-read-metadata (subpath "/Users") (subpath "/private/var/folders"))
+(allow file-read*
+  (subpath (param "WORK"))
+  (subpath (param "VENV"))
+  (subpath (param "PYHOME"))
+  (subpath (param "SCRIPTS")))

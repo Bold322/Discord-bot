@@ -1,0 +1,7 @@
+{
+  "name": "features-bot-dashboard",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/bot-dashboard/src",
+  "projectType": "library",
+  "tags": ["scope:client", "type:feature"]
+}
